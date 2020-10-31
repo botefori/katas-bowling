@@ -1,0 +1,22 @@
+{
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintPath": "/home/icamara/.local/bin/pylint",
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "--disable=all",
+    ],
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./tests",
+        "-p",
+        "*_test.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.unittestEnabled": true,
+    "editor.fontSize": 18,
+    "workbench.settings.editor": "json",
+    "workbench.settings.openDefaultSettings": true
+}
