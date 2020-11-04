@@ -12,8 +12,11 @@ class Game:
     def roll(self, pins: int):
         self.currentFrame.roll(pins)
         if self.currentFrame.isFilled() == True :
+            isSpare = self.currentFrame.isSpare()
             self.frames[self.frame_index] = self.currentFrame
             self.currentFrame = Frame()
+            if isSpare == True:
+                self.currentFrame.roll(pins)
             self.frame_index = self.frame_index + 1
             
         return self.currentFrame
